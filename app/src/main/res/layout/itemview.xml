@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardCornerRadius="6dp"
+    card_view:cardElevation="3dp"
+    card_view:cardUseCompatPadding="true">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="70dp"
+            android:layout_height="73dp"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/study"/>
+
+        <!-- TextView Nama Mahasiwa -->
+        <TextView
+            android:text="nama"
+            android:id="@+id/txt_nama_mahasiswa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/icon"
+            android:layout_marginLeft="50dp"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"/>
+
+        <!-- TextView Npm Mahasiswa -->
+        <TextView
+            android:text="nim"
+            android:id="@+id/txt_npm_mahasiswa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/icon"
+            android:layout_marginTop="35dp"
+            android:layout_marginLeft="50dp"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
